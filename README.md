@@ -51,4 +51,4 @@ Hybrid simulation combining SOFA spatialization and Shoebox room reverberation.
 
 
 ## Acoustic Analysis (RIR)
-![Room Impulse Response](rir_plot.png)
+![Room Impulse Response](Media/rir_plot.png)
