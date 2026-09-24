@@ -18,9 +18,9 @@ def get_hrir(sofa, azimuth, elevation):
     return ir_data[idx, 0, :], ir_data[idx, 1, :]
 
 def main_dynamic_room():
-    input_audio = 'voce_dry.wav'
-    sofa_file = 'FABIAN_HRIR_measured_HATO_0.sofa'
-    output_audio = 'voce_dinamica_stanza.wav'
+    input_audio = '..\Media\voce_dry.wav'
+    sofa_file = '..\Media\FABIAN_HRIR_measured_HATO_0.sofa'
+    output_audio = '..\Media\voce_dinamica_stanza.wav'
     
     print("1. Caricamento audio originale...")
     audio, sr = sf.read(input_audio)

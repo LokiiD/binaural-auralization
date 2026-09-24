@@ -5,8 +5,8 @@ import os
 
 def main_indoor():
     # CONFIGURAZIONE AUDIO E STANZA
-    audio_input = 'voce_dry.wav'  
-    audio_output = 'indoor_auralization.wav'
+    audio_input = '..\Media\voce_dry.wav'  
+    audio_output = '..\Media\indoor_auralization.wav'
     
     # File audio e la stanza devono avere lo stesso Sampling Rate
     audio_segnale, sr = sf.read(audio_input)

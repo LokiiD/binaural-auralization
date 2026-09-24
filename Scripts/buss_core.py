@@ -19,9 +19,9 @@ def get_hrir(sofa, azimuth, elevation):
     return ir_data[idx, 0, :], ir_data[idx, 1, :]
 
 def main_dynamic():
-    input_audio = 'traffic_dry.wav'
-    sofa_file = 'FABIAN_HRIR_measured_HATO_0.sofa' # Verifica sempre il nome!
-    output_audio = 'traffic_passby_dynamic.wav'
+    input_audio = '..\Media\traffic_dry.wav'
+    sofa_file = '..\Media\FABIAN_HRIR_measured_HATO_0.sofa' # Verifica sempre il nome!
+    output_audio = '..\Media\traffic_passby_dynamic.wav'
     
     durata_simulazione = 10.0  
     velocita_kmh = 50.0        

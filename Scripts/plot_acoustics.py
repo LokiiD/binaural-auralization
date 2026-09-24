@@ -5,7 +5,7 @@ def genera_grafici():
     print("Calcolo del modello acustico...")
     room_dim = [8, 6, 3]
     
-    # Stessi materiali del progetto "stanza
+    # Stessi materiali del progetto "stanza"
     materials = pra.make_materials(
         ceiling="acoustical_plaster_25mm", floor="carpet_cotton",
         east="gypsum_board", west="gypsum_board",
@@ -28,7 +28,7 @@ def genera_grafici():
     plt.grid(True, linestyle='--', alpha=0.5)
     plt.tight_layout()
     
-    file_output = 'rir_plot.png'
+    file_output = '..\Media\rir_plot.png'
     plt.savefig(file_output, dpi=300)
     print(f"Grafico generato con successo: {file_output}")
 

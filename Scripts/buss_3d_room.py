@@ -20,9 +20,9 @@ def get_hrir(sofa, azimuth, elevation):
 
 def main_3d_room():
     # CONFIGURAZIONE FILE
-    input_audio = 'voce_dry.wav'
-    sofa_file = 'FABIAN_HRIR_measured_HATO_0.sofa'
-    output_audio = 'voce_binaurale_stanza.wav'
+    input_audio = '..\Media\voce_dry.wav'
+    sofa_file = '..\Media\FABIAN_HRIR_measured_HATO_0.sofa'
+    output_audio = '..\Media\voce_binaurale_stanza.wav'
     
     print("1. Caricamento audio...")
     audio, sr = sf.read(input_audio)
