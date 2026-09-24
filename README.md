@@ -27,8 +27,8 @@ pip install -r requirements.txt
 
 *(Main dependencies: `numpy`, `scipy`, `soundfile`, `pysofaconventions`, `pyroomacoustics`)*
 
-### Datasets Required (Not included in repo)
-To run the scripts, you must place the following files in the root directory:
+### Datasets Required (Can be found in the Media folder):
+
 1. **SOFA File:** A valid HRTF dataset (e.g., `FABIAN_HRIR_measured_HATO_0.sofa` from TU Berlin).
 2. **Dry Audio:** Anechoic or completely dry mono `.wav` files (e.g., `traffic_dry.wav`, `voce_dry.wav`).
 
