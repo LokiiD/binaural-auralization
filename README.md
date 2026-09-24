@@ -34,3 +34,24 @@ To run the scripts, you must place the following files in the root directory:
 
 ## Methodology
 The spatialization engine calculates the instantaneous Euclidean distance and azimuth for a moving source. The signal is framed and convolved with the nearest measured HRIR from the SOFA dataset. For indoor environments, `pyroomacoustics` simulates the early reflections and late reverberation tail based on specified surface properties, which is then convolved with the HRTF-processed direct sound.
+
+##DEMO RESULTS
+
+## 🎧 Audio Demos
+Listen to the results of the spatialization engine. Click the links below to open GitHub's integrated audio player:
+
+### 🚗 Outdoor Auralization
+Dynamic simulation of a vehicle pass-by in a free field (using `buss_core.py`).
+- [🔊 Original Mono Source: Traffic](traffic_dry.wav)
+- [🎧 3D Auralization: Dynamic Pass-by](traffic_passby_dynamic.wav)
+
+### 🗣️ Indoor Architectural Auralization
+Hybrid simulation combining SOFA spatialization and Shoebox room reverberation.
+- [🔊 Original Mono Source: Voice](voce_dry.wav)
+- [🎧 **Stage 1:** Room Reverberation Only](indoor_auralization.wav) — Basic acoustic imprint (using `buss_indoor.py`).
+- [🎧 **Stage 2:** Static 3D Position + Room](voce_binaurale_stanza.wav) — Source placed statically to the front-left of the listener (using `buss_3d_room.py`).
+- [🎧 **Stage 3:** Dynamic Moving Source + Room](voce_dinamica_stanza.wav) — Source traversing the reverberant room in real-time (using `buss_dynamic_room.py`).
+
+
+## 📊 Acoustic Analysis (RIR)
+![Room Impulse Response](rir_plot.png)
